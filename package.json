@@ -1,0 +1,16 @@
+{
+  "name": "nk-fit",
+  "version": "1.0.0",
+  "description": "## Paginas em desenvolvimento",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx http-server ./src",
+    "style": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
