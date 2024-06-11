@@ -6,7 +6,7 @@
 
 ## Paginas em desenvolvimento
 
-- [ ] home
+- [ x ] home
 - [ ] produtos
 - [ ] detalhes
 - [ ] carrinho

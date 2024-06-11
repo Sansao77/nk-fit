@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#add-header").load("../header.html");
+            $("add-footer").load("../footer.html");
+        });
+    </script>
+</head>
+<body>
+    <header id="add-header"></header>
+    <div class="flex flex-col mt-10 mb-4 px-6 text-[#333333]">
+        <span class="text-sm">Página Inicial &nbsp; > 
+            <span id="conjuntos">&nbsp; Conjuntos</span>
+        </span>
+        <p class="my-3 text-xl self-center">CONJUNTOS</p>
+        <form action="" method="get" class="flex justify-between items-center text-center text-sm">
+            <span>
+                <span id="produtos">93</span>
+                produtos encontrados
+            </span>
+            <div class="flex text-center justify-center items-center">
+                <label for="ordem">Ordenar por</label>
+                <select name="ordenacao" id="ordem" class="ml-2 p-1.5 pr-8 appearance-none border-2 border-black
+                cursor-pointer">
+                    <option value="novidade" selected>NOVIDADES</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <main class="relative flex w-full px-6">
+        <aside class="sticky grid grid-flow-row gap-y-4 w-1/5 mb-6 *:flex *:flex-col *:p-2
+        *:border-2 *:border-[#F5F5F5] *:rounded-md">
+            <div class="[&>button]:py-1.5 [&>button]:text-sm [&>button]:text-gray-500 
+                [&>button]:text-left">
+                <h3 class="font-bold mb-1.5">POR PREÇO</h3>
+                <button type="button" class=" active:text-[#E6E256] focus:text-[#E6E256]">ATÉ R$ 50,00</button>
+                <button type="button" class="active:text-[#E6E256] focus:text-[#E6E256]">DE R$ 50,00 ATÉ R$ 100,00</button>
+            </div>
+            <div class="[&>button]:py-1.5 [&>button]:text-sm [&>button]:text-gray-500
+                [&>button]:text-left">
+                <h3 class="font-bold mb-1.5">CONJUNTOS</h3>
+                <button type="button" class="active:text-[#E6E256] focus:text-[#E6E256]">CONJUNTO DE CALÇAS</button>
+                <button type="button" class="active:text-[#E6E256] focus:text-[#E6E256]">CONJUNTO DE SHORT</button>
+            </div>
+            <form action="" method="get" class="">
+                <h3 class="font-bold mb-1.5">TAMANHO</h3>
+                <div class="grid grid-flow-row gap-y-3 *:flex *:text-gray-500 [&_input]:mr-2 
+                [&_input]:border-2 [&_input]:rounded-md [&_input]:cursor-pointer [&_label]:text-sm">
+                    <div>
+                        <input type="checkbox" name="pequeno" id="P" value="P">
+                        <label for="P">P</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="medio" id="M" value="M">
+                        <label for="M">M</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="grande" id="G" value="G">
+                        <label for="G">G</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="extra grande" id="GG" value="GG">
+                        <label for="GG">GG</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="grande 1" id="G1" value="G1">
+                        <label for="G1">G1</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="grande 2" id="G2" value="G2">
+                        <label for="G2">G2</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="grande 3" id="G3" value="G3">
+                        <label for="G3">G3</label>
+                    </div>
+                </div>
+            </form>
+        </aside>
+        <section id="display-produtos" class="w-full">
+
+        </section>
+    </main>
+    <footer id="add-footer"></footer>
+</body>
+</html>
