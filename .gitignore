@@ -1,1 +1,6 @@
+# Modules
 /node_modules
+/src/app/ts
+
+# Files
+tsconfig.json

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "## Paginas em desenvolvimento",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "npx http-server ./src",
     "style": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   }
 }

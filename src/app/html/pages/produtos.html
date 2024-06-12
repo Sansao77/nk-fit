@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
     <title>Produtos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/output.css">
+    <script type="module" src="../../js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(function(){
             $("#add-header").load("../header.html");
-            $("add-footer").load("../footer.html");
+            $("#add-footer").load("../footer.html");
         });
     </script>
 </head>
@@ -35,8 +37,8 @@
             </div>
         </form>
     </div>
-    <main class="relative flex w-full px-6">
-        <aside class="sticky grid grid-flow-row gap-y-4 w-1/5 mb-6 *:flex *:flex-col *:p-2
+    <main class="relative flex w-full px-6 mb-5">
+        <aside class="sticky left-0 top-5 grid grid-flow-row gap-y-4 w-1/5 h-fit mb-6 *:flex *:flex-col *:p-2
         *:border-2 *:border-[#F5F5F5] *:rounded-md">
             <div class="[&>button]:py-1.5 [&>button]:text-sm [&>button]:text-gray-500 
                 [&>button]:text-left">
@@ -52,8 +54,8 @@
             </div>
             <form action="" method="get" class="">
                 <h3 class="font-bold mb-1.5">TAMANHO</h3>
-                <div class="grid grid-flow-row gap-y-3 *:flex *:text-gray-500 [&_input]:mr-2 
-                [&_input]:border-2 [&_input]:rounded-md [&_input]:cursor-pointer [&_label]:text-sm">
+                <div class="grid grid-flow-row gap-y-3 *:flex *:text-gray-500 *:items-center
+                [&_input]:mr-2 [&_input]:border-2 [&_input]:rounded-md [&_input]:cursor-pointer [&_label]:text-sm">
                     <div>
                         <input type="checkbox" name="pequeno" id="P" value="P">
                         <label for="P">P</label>
@@ -91,10 +93,10 @@
                 </div>
             </form>
         </aside>
-        <section id="display-produtos" class="w-full">
-
-        </section>
+        <section id="display-produtos" 
+        class="grid grid-cols-3 gap-x-24 gap-y-8 w-full py-3 px-16"></section>
     </main>
     <footer id="add-footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>

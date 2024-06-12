@@ -1,0 +1,57 @@
+{
+    "conjuntos":[
+        {
+            "id":1966,
+            "nome":"CONJUNTO DE SHORT JASMIN",
+            "img":"/public/exemplos/produtos/produto1.png",
+            "estoque":{
+                "status":"POSSUI",
+                "preço":53.00
+            }
+        },
+        {
+            "id":1333,
+            "nome":"CONJUNTO DE CAlÇA SÓFIA",
+            "img":"/public/exemplos/produtos/produto2.png",
+            "estoque":{
+                "status":"POSSUI",
+                "preço":76.00
+            }
+        },
+        {
+            "id":10011,
+            "nome":"CONJUNTO DE CALÇA ALEXANDRITA",
+            "img":"/public/exemplos/produtos/produto3.png",
+            "estoque":{
+                "status":"POSSUI",
+                "preço":70.00
+            }
+        },
+        {
+            "id":2247,
+            "nome":"CONJUNTO PRIME",
+            "img":"/public/exemplos/produtos/produto4.png",
+            "estoque":{
+                "status":"POSSUI",
+                "preço":52.00
+            }
+        },
+        {
+            "id":2067,
+            "nome":"CONJUNTO DE CALÇA MARTE",
+            "img":"/public/exemplos/produtos/produto5.png",
+            "estoque":{
+                "status":"POSSUI",
+                "preço":62.00
+            }
+        },
+        {
+            "id":2822,
+            "nome":"CONJUNTO CALÇA SPLENDOR",
+            "img":"/public/exemplos/produtos/produto6.png",
+            "estoque":{
+                "status":"ESGOTADO"
+            }
+        }
+    ]
+}
