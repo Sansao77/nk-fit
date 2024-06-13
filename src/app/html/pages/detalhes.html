@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+    <title>Produtos - Detalhes</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $("#add-header").load("../header.html");
+            $("#add-footer").load("../footer.html");
+        });
+    </script>
+</head>
+<body>
+    <header id="add-header"></header>
+    <main class="flex flex-col">
+        <div class="border-t-[1px] border-[#999999] px-6 py-4 text-xs text-[#333333]">
+            <span>Página Inicial > CONJUNTOS > CONJUNTO DE SHORT > CONJUNTO DE SHORT JASMIN</span>
+        </div>
+        <section class="flex px-6">
+            <div class="flex w-2/3">
+                <div class="grid grid-rows-4 col-auto w-1/5 *:size-4/5">
+                    <div class=" overflow-hidden border-black border-[3px]">
+                        <img src="/public/exemplos/produtos/produto1.png" alt="detalhe-1">
+                    </div>
+                    <div class=" overflow-hidden">
+                        <img src="/public/exemplos/detalhes/detalhe1.png" alt="detalhe-2">
+                    </div>
+                    <div class=" overflow-hidden">
+                        <img src="/public/exemplos/detalhes/detalhe2.png" alt="detalhe-3">
+                    </div>
+                    <div class=" overflow-hidden">
+                        <img src="/public/exemplos/detalhes/detalhe3.png" alt="detalhe-4">
+                    </div>
+                </div>
+                <div class="flex px-1 items-center justify-between">
+                    <button type="button" title="esquerda" 
+                    class="flex bg-[#00000080] items-center justify-center px-2 py-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" 
+                        class="size-4 fill-white stroke-white">
+                            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+                        </svg>
+                    </button>
+
+                    <div class="flex flex-col mx-40 items-center justify-center">
+                        <img src="/public/exemplos/produtos/produto1.png" alt="detalhe-1">
+
+                        <div class="flex justify-center py-3 *:mx-1.5">
+                            <button type="button" id="conjunto-1" title="conjunto-1"
+                            class="size-4 rounded-full bg-[#D6D6D6] active:bg-black focus:bg-black"></button>
+                            <button type="button" id="conjunto-2" title="conjunto-2"
+                            class="size-4 rounded-full bg-[#D6D6D6] active:bg-black focus:bg-black"></button>
+                            <button type="button" id="conjunto-3" title="conjunto-3"
+                            class="size-4 rounded-full bg-[#D6D6D6] active:bg-black focus:bg-black"></button>
+                            <button type="button" id="conjunto-4" title="conjunto-4"
+                            class="size-4 rounded-full bg-[#D6D6D6] active:bg-black focus:bg-black"></button>
+                        </div>
+                    </div>
+
+                    <button type="button" title="direita"
+                    class="flex bg-[#00000080] items-center justify-center px-2 py-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                    class="size-4 fill-white stroke-white">
+                        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                    </svg>
+                    </button>
+                </div>
+            </div>
+            <form action="" method="post" class="flex flex-col w-1/3  p-3">
+                <h2 class="text-xl font-semibold">CONJUNTO DE SHORT JASMIN</h2>
+                <span class="pt-2 text-xs">Cód.: 1966</span>
+                <p class="py-4 text-xl font-bold">R$53,00</p>
+
+                <div class="grid grid-flow-col gap-x-4 w-fit py-2 items-center">
+                    <div class="w-6 h-8 border-2 border-[#444444] -mt-4 cursor-pointer"></div>
+
+                    <div class="flex flex-col items-center text-center text-[#999999]">
+                        <span class="text-xs">P</span>
+                        <input type="text" name="quantidade-P" id="quantidade-P" title="quantidade-P"
+                        maxlength="2" class="size-9 border-[#999999] border-[1px] rounded-full text-center">
+                        <div class="flex justify-around w-full text-lg">
+                            <button type="button">-</button>
+                            <button type="button">+</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center text-[#999999]">
+                        <span class="text-xs">M</span>
+                        <input type="text" name="quantidade-M" id="quantidade-M" title="quantidade-M"
+                        maxlength="2" class="size-9 border-[#999999] border-[1px] rounded-full text-center">
+                        <div class="flex justify-around w-full text-lg">
+                            <button type="button">-</button>
+                            <button type="button">+</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center text-[#999999]">
+                        <span class="text-xs">G</span>
+                        <input type="text" name="quantidade-G" id="quantidade-G" title="quantidade-G"
+                        maxlength="2" class="size-9 border-[#999999] border-[1px] rounded-full text-center">
+                        <div class="flex justify-around w-full text-lg">
+                            <button type="button">-</button>
+                            <button type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit"
+                class="rounded-xl bg-[#999999] px-8 py-3 text-xs 
+                text-center text-[#E6E256] active:bg-opacity-70">
+                    ADICIONAR AO CARRINHO
+                </button>
+                <div class="mt-1">
+                    <span class="text-xs">Calcular frete e prazo</span>
+                    <div class="flex justify-between mt-1">
+                        <input type="text" name="" id="cep-frete" title="cep-frete"
+                        placeholder="Digite seu CEP" maxlength="8" 
+                        class=" w-3/4 px-6 py-2 rounded-xl text-sm text-center border-[1px] border-[#999999] ">
+
+                        <button type="button"
+                        class="rounded-xl bg-[#E6E256] w-1/5 px-6 py-2 text-sm 
+                            text-center text-[#999999] active:bg-opacity-70">
+                            OK
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="flex flex-col px-6 py-2 text-[#333333] [&>span]:text-sm font-medium">
+            <p class="mb-3 text-xs">DESCRIÇÃO</p>
+
+            <span>TECIDO: <span id="tecido">POLIAMIDA</span></span>
+            <span>GRAMATURA: <span id="gramatura">285</span></span>
+            <span>COMPOSIÇÃO: <span id="composiçao">91%POLIAMIDA, 9%ELASTANO</span></span>
+            <span id="detalhe">BOJO REMOVÍVEL</span>
+        </div>
+
+        <section class="text-center">
+            <p class="text-xl text-[#333333]">PRODUTOS RELACIONADOS</p>
+            <div class="grid grid-cols-4 gap-x-28 w-full my-5 px-12">
+                <div class="flex flex-col items-center text-center">
+                    <img src="/public/exemplos/detalhes/relacionados/relacionado1.png" alt="exemplo1" class="max-h-3/5">
+                    <div class="flex flex-col text-center mt-2">
+                        <span>CONJUNTO BENCH PRESS</span>
+                        <span class="text-xs mb-3">
+                            Cod: <span id="codigo-11927" class="font-bold">1927</span>
+                        </span>
+                        <span id="valor-1927" class="font-bold">R$62,00</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <img src="/public/exemplos/detalhes/relacionados/relacionado2.png" alt="exemplo1" class="max-h-3/5 ">
+                    <div class="flex flex-col text-center mt-2">
+                        <span>CONJUNTO STATIONARY BIKE</span>
+                        <span class="text-xs mb-3">
+                            Cod: <span id="codigo-1942" class="font-bold">1942</span>
+                        </span>
+                        <span id="valor-1942" class="font-bold">R$53,00</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <img src="/public/exemplos/detalhes/relacionados/relacionado3.png" alt="exemplo1" class="max-h-3/5">
+                    <div class="flex flex-col text-center mt-2">
+                        <span>CONJUNTO DE CALÇA FLASH</span>
+                        <span class="text-xs mb-3">
+                            Cod: <span id="codigo-1719" class="font-bold">1719</span>
+                        </span>
+                        <span id="valor-1719" class="font-bold">R$65,00</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <img src="/public/exemplos/produtos/produto3.png" alt="relacionado4" class="max-h-3/5">
+                    <div class="flex flex-col text-center mt-2">
+                        <span>CONJUNTO DE CALÇA ALEXANDRITA</span>
+                        <span class="text-xs mb-3">
+                            Cod: <span id="codigo-10011" class="font-bold">10011</span>
+                        </span>
+                        <span id="valor-10011" class="font-bold">R$70,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="add-footer"></footer>
+</body>
+</html>
