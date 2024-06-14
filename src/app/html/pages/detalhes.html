@@ -16,13 +16,14 @@
 </head>
 <body>
     <header id="add-header"></header>
+
     <main class="flex flex-col">
         <div class="border-t-[1px] border-[#999999] px-6 py-4 text-xs text-[#333333]">
             <span>Página Inicial > CONJUNTOS > CONJUNTO DE SHORT > CONJUNTO DE SHORT JASMIN</span>
         </div>
-        <section class="flex px-6">
-            <div class="flex w-2/3">
-                <div class="grid grid-rows-4 col-auto w-1/5 *:size-4/5">
+        <section class="flex flex-col lg:flex-row px-6">
+            <div class="flex max-sm:flex-col lg:w-2/3">
+                <div class="grid max-sm:grid-cols-4 max-sm:row-auto sm:grid-rows-4 sm:col-auto sm:w-1/5 *:size-4/5">
                     <div class=" overflow-hidden border-black border-[3px]">
                         <img src="/public/exemplos/produtos/produto1.png" alt="detalhe-1">
                     </div>
@@ -36,9 +37,9 @@
                         <img src="/public/exemplos/detalhes/detalhe3.png" alt="detalhe-4">
                     </div>
                 </div>
-                <div class="flex px-1 items-center justify-between">
+                <div class="flex px-4 sm:px-1 items-center justify-between max-sm:1/4 max-sm:self-center">
                     <button type="button" title="esquerda" 
-                    class="flex bg-[#00000080] items-center justify-center px-2 py-10">
+                    class="flex bg-[#00000080] items-center justify-center px-2 py-5 sm:py-10">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" 
                         class="size-4 fill-white stroke-white">
                             <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -46,7 +47,7 @@
                         </svg>
                     </button>
 
-                    <div class="flex flex-col mx-40 items-center justify-center">
+                    <div class="flex flex-col max-[320px]:mx-10 mx-20 sm:mx-40 items-center justify-center">
                         <img src="/public/exemplos/produtos/produto1.png" alt="detalhe-1">
 
                         <div class="flex justify-center py-3 *:mx-1.5">
@@ -62,7 +63,7 @@
                     </div>
 
                     <button type="button" title="direita"
-                    class="flex bg-[#00000080] items-center justify-center px-2 py-10">
+                    class="flex bg-[#00000080] items-center justify-center px-2 py-5 sm:py-10">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
                     class="size-4 fill-white stroke-white">
                         <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -71,7 +72,7 @@
                     </button>
                 </div>
             </div>
-            <form action="" method="post" class="flex flex-col w-1/3  p-3">
+            <form action="" method="post" class="flex flex-col lg:w-1/3  p-3">
                 <h2 class="text-xl font-semibold">CONJUNTO DE SHORT JASMIN</h2>
                 <span class="pt-2 text-xs">Cód.: 1966</span>
                 <p class="py-4 text-xl font-bold">R$53,00</p>
@@ -142,7 +143,7 @@
 
         <section class="text-center">
             <p class="text-xl text-[#333333]">PRODUTOS RELACIONADOS</p>
-            <div class="grid grid-cols-4 gap-x-28 w-full my-5 px-12">
+            <div class="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-x-28 w-full my-5 px-12">
                 <div class="flex flex-col items-center text-center">
                     <img src="/public/exemplos/detalhes/relacionados/relacionado1.png" alt="exemplo1" class="max-h-3/5">
                     <div class="flex flex-col text-center mt-2">
@@ -189,6 +190,7 @@
             </div>
         </section>
     </main>
+    
     <footer id="add-footer"></footer>
 </body>
 </html>

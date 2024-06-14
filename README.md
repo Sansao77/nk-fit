@@ -10,3 +10,4 @@
 - [x] produtos
 - [x] detalhes
 - [x] carrinho
+- [x] responsividade

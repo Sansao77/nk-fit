@@ -18,6 +18,7 @@
 </head>
 <body>
     <header id="add-header"></header>
+
     <div class="flex flex-col mt-10 mb-4 px-6 text-[#333333]">
         <span class="text-sm">Página Inicial &nbsp; > 
             <span id="conjuntos">&nbsp; Conjuntos</span>
@@ -54,7 +55,7 @@
             </div>
             <form action="" method="get" class="">
                 <h3 class="font-bold mb-1.5">TAMANHO</h3>
-                <div class="grid grid-flow-row gap-y-3 *:flex *:text-gray-500 *:items-center
+                <div class="grid grid-flow-row gap-y-3 *:flex *:text-gray-500 *:items-center max-sm:mr-4
                 [&_input]:mr-2 [&_input]:border-2 [&_input]:rounded-md [&_input]:cursor-pointer [&_label]:text-sm">
                     <div>
                         <input type="checkbox" name="pequeno" id="P" value="P">
@@ -94,8 +95,9 @@
             </form>
         </aside>
         <section id="display-produtos" 
-        class="grid grid-cols-3 gap-x-24 gap-y-8 w-full py-3 px-16"></section>
+        class="grid grid-flow-row sm:grid-cols-3 sm:gap-x-24 gap-y-8 w-full py-3 px-16"></section>
     </main>
+    
     <footer id="add-footer"></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>

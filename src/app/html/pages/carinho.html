@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/src/output.css">
 </head>
 <body>
-    <aside class="fixed top-0 right-0 flex flex-col bg-white w-[30%] h-screen">
-        <button type="button" class="flex mt-2 appearance-none text-[#999999] items-center text-center w-fit">
+    <aside class="fixed top-0 right-0 flex flex-col bg-white w-full sm:w-[30%] h-screen">
+        <button type="button" class="flex px-2 mt-2 appearance-none text-[#999999] items-center text-center w-fit">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" 
             class="size-4 fill-[#999999] mr-1">
                 <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -21,7 +21,7 @@
         <section class="flex flex-col px-3 overflow-y-auto overscroll-contain">
             <div class="grid grid-flow-row gap-y-4 mt-6 px-3 h-fit">
                 <div class="flex w-full justify-between">
-                    <div class="flex">
+                    <div class="flex max-lg:sm:flex-col">
                         <div class="size-24 overflow-hidden mr-2">
                             <img src="/public/exemplos/produtos/produto1.png" alt="produto-carrinho1">
                         </div>
@@ -64,11 +64,11 @@
         </section>
         
         <div class="flex flex-col bg-[#999999] w-full p-2 items-center mt-auto">
-            <button type="button" class="text-white w-fit underline underline-offset-2 py-1">
+            <button type="button" class="text-white w-fit underline underline-offset-2 pt-1 pb-3">
                 Esvaziar Carrinho
             </button>
 
-            <div class="flex w-full justify-between">
+            <div class="flex max-lg:flex-col w-full justify-between">
                 <div class="flex flex-col text-[#E6E256]">
                     <span class="text-sm font-semibold">TOTAL</span>
                     <span class="text-sm">
