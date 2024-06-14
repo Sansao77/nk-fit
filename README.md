@@ -8,5 +8,5 @@
 
 - [x] home
 - [x] produtos
-- [ ] detalhes
-- [ ] carrinho
+- [x] detalhes
+- [x] carrinho
